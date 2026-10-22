@@ -32,7 +32,7 @@ Setiap bug memiliki minimal satu eksekusi FAIL di Run 31. Untuk #24 dan #25 yang
 | [#34](https://github.com/SallVea/UTS-PPL/issues/34) | TC-NEG-07 | TE-83 / case 29 | FAILED | [screenshot](https://raw.githubusercontent.com/SallVea/UTS-PPL/main/evidence-uts/screenshots/BUG-034_double-click-confirm.png) | [notulen](https://github.com/SallVea/UTS-PPL/blob/main/evidence-uts/triage-notes.md#issue-34) |
 
 ## Catatan Evidence
-- Screenshot berasal dari lampiran komentar eksekusi Kiwi dan disalin ke `evidence-uts/screenshots/`.
-- Beberapa screenshot adalah crop dari lampiran asli; screenshot layar penuh tetap tersedia pada komentar eksekusi Kiwi.
-- Screen recording untuk #34 (klik ganda) belum tersedia; bukti saat ini berupa screenshot dan urutan langkah pada komentar eksekusi.
-- Log console/network untuk #30 dan #32 perlu ditambahkan bila tersedia.
+- Screenshot berasal dari lampiran issue dan komentar eksekusi Kiwi, lalu disalin ke `evidence-uts/screenshots/`.
+- #7, #8, #32, dan #34 memakai lampiran asli issue; #24 dan #25 berupa crop karena bukti asli dari pelapor memang crop; #14–#17 juga crop detail produk.
+- Screen recording untuk #34 (klik ganda) belum tersedia; bukti saat ini berupa dua screenshot (with-bugs: 2 request 500 dan oracle: 2 invoice) serta urutan langkah pada komentar eksekusi.
+- Log network untuk #30 dan #32 sudah terlihat pada screenshot (status 500); log mentah belum diekspor.

@@ -258,7 +258,7 @@ Terkait TC-EP-07; eksekusi TE-68 juga FAIL. Tindak lanjut: tampilkan pesan forma
 ### Issue #34 — Klik ganda cepat Confirm mengirim 2 request pembuatan pesanan
 **Final:** Major / P2 · **Area:** Checkout / Pembayaran · **TC:** TC-NEG-07 · **Eksekusi:** TE-83 ([Run 31](https://localhost/run/31/#c83)) · **Issue:** [#34](https://github.com/SallVea/UTS-PPL/issues/34)
 
-Perlu screen recording urutan interaksi; saat ini bukti berupa screenshot dan catatan sesi. Tindak lanjut: nonaktifkan tombol setelah klik pertama.
+Perlu screen recording urutan interaksi; saat ini bukti berupa dua screenshot, yaitu with-bugs dengan 2 request 500 dan oracle dengan 2 invoice. Tindak lanjut: nonaktifkan tombol setelah klik pertama.
 
 **Alasan severity/priority:** Risiko duplikasi order akibat dua request.
 
