@@ -36,6 +36,8 @@
 
 **Temuan utama:** keyword tanpa hasil menampilkan seluruh 26 produk; judul kartu berpindah saat slider harga diubah; nama produk berubah-ubah saat mengetik; area login/logout belum selesai diuji.
 
+**Catatan independensi:** Sesi 2 dijalankan Atsaal (R1) sebagai cross-role tester; Ikhsan (R3) bertindak sebagai reviewer pada debrief agar tetap ada peer review.
+
 **Yang dieskalasi:**
 - [#38](https://github.com/SallVea/UTS-PPL/issues/38) — Major/P2, karena hasil pencarian menampilkan produk yang tidak sesuai keyword dan bertentangan dengan oracle.
 
