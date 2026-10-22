@@ -39,6 +39,13 @@ evidence-uts/
 README.md
 ```
 
+## Dokumen T8
+
+- [Notulen triage](evidence-uts/triage-notes.md) — 2–3 kalimat per issue.
+- [Matriks severity & priority](evidence-uts/severity-priority-matrix.md) — definisi dan alasan final.
+- [Traceability](evidence-uts/t8-traceability.md) — issue ↔ TC ↔ eksekusi Kiwi ↔ evidence.
+- [Evidence screenshots](evidence-uts/screenshots/) — 28 file `BUG-<nomor>_<slug>.png`.
+
 ## Alur pelaporan bug
 
 1. Reproduksi bug di AUT dan bandingkan dengan oracle. Perilaku yang **sama persis**
