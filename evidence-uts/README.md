@@ -17,6 +17,14 @@ BUG-001_console.log
 
 Setiap temuan di laporan wajib menyebut ID bug dan nama berkas evidence.
 
+## Dokumen T5
+
+| Dokumen | Isi |
+|---|---|
+| [TC-EXP-01_session-notes.md](session-notes/TC-EXP-01_session-notes.md) | Session Notes Charter 1, 30 menit, Ikhsan |
+| [TC-EXP-02_session-notes.md](session-notes/TC-EXP-02_session-notes.md) | Session Notes Charter 2, 30 menit, Atsaal |
+| [SBTM-debrief.md](session-notes/SBTM-debrief.md) | Debrief Test Lead dan checklist T5 |
+
 ## Dokumen T8
 
 | Dokumen | Isi |

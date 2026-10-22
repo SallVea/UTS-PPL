@@ -39,6 +39,12 @@ evidence-uts/
 README.md
 ```
 
+## Dokumen T5
+
+- [Session Notes TC-EXP-01](evidence-uts/session-notes/TC-EXP-01_session-notes.md) — Charter 1, 30 menit, Ikhsan.
+- [Session Notes TC-EXP-02](evidence-uts/session-notes/TC-EXP-02_session-notes.md) — Charter 2, 30 menit, Atsaal.
+- [Debrief SBTM](evidence-uts/session-notes/SBTM-debrief.md) — debrief Test Lead, keputusan eskalasi, dan checklist T5.
+
 ## Dokumen T8
 
 - [Notulen triage](evidence-uts/triage-notes.md) — 2–3 kalimat per issue.
