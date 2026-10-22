@@ -35,7 +35,7 @@ Setiap temuan di laporan wajib menyebut ID bug dan nama berkas evidence.
 
 ## Evidence T8
 
-- `screenshots/` berisi 28 screenshot issue dengan nama `BUG-<nomor>_<slug>.png`, ditambah 1 evidence pembanding untuk #34 (`BUG-034_oracle-duplicate-order.png`).
+- `screenshots/` berisi 32 screenshot issue dengan nama `BUG-<nomor>_<slug>.png`, ditambah 1 evidence pembanding untuk #34 (`BUG-034_oracle-duplicate-order.png`).
 - Screenshot diambil dari lampiran issue dan komentar eksekusi Kiwi Run 31; untuk #7, #8, #24, #25, #32, dan #34 dipakai lampiran asli issue.
 - Beberapa screenshot merupakan crop; versi layar penuh tetap tersedia pada komentar eksekusi Kiwi.
 - Screen recording dan log console yang belum tersedia dicatat pada `t8-traceability.md`.

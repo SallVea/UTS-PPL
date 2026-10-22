@@ -5,7 +5,7 @@
 ## Ringkasan
 | Keputusan | Jumlah |
 |---|---:|
-| Valid, tetap OPEN | 28 |
+| Valid, tetap OPEN | 32 |
 | Duplikat dihapus | 0 |
 | Ditutup karena bukan bug | 0 |
 
@@ -262,3 +262,39 @@ Perlu screen recording urutan interaksi; saat ini bukti berupa dua screenshot, y
 
 **Alasan severity/priority:** Risiko duplikasi order akibat dua request.
 
+
+<a id="issue-35"></a>
+
+### Issue #35 — Email dengan dua simbol @ tidak divalidasi formatnya
+**Final:** Minor / P2 · **Area:** Login / Auth · **TC:** TC-EP-11 · **Eksekusi:** TE-88 ([Run 31](https://localhost/run/31/#c88)) · **Issue:** [#35](https://github.com/SallVea/UTS-PPL/issues/35)
+
+Input `admin@@practicesoftwaretesting.com` tidak ditandai sebagai format email salah; AUT menampilkan pesan kredensial yang menyesatkan, sedangkan oracle menandai field dan mencegah login. Tindak lanjut: validasi format email sebelum request autentikasi.
+
+**Alasan severity/priority:** Login tetap dicegah, tetapi pesan validasi tidak sesuai dan dapat membingungkan pengguna.
+
+<a id="issue-36"></a>
+
+### Issue #36 — Kolom kuantitas menerima huruf dan total menjadi $0.00
+**Final:** Minor / P2 · **Area:** Keranjang · **TC:** TC-EP-12 · **Eksekusi:** TE-87 ([Run 31](https://localhost/run/31/#c87)) · **Issue:** [#36](https://github.com/SallVea/UTS-PPL/issues/36)
+
+Huruf dapat diketik pada kolom kuantitas, lalu total baris dan total keranjang berubah menjadi `$0.00` tanpa pesan error. Tindak lanjut: batasi input ke bilangan bulat dan tampilkan validasi.
+
+**Alasan severity/priority:** Kesalahan input merusak kalkulasi keranjang, tetapi tidak memblokir seluruh alur.
+
+<a id="issue-37"></a>
+
+### Issue #37 — Kuantitas desimal 1.5 diubah diam-diam menjadi 1
+**Final:** Minor / P2 · **Area:** Keranjang · **TC:** TC-EP-12 · **Eksekusi:** TE-87 ([Run 31](https://localhost/run/31/#c87)) · **Issue:** [#37](https://github.com/SallVea/UTS-PPL/issues/37)
+
+Nilai `1.5` langsung berubah menjadi `1` tanpa peringatan; oracle menampilkan popup bahwa kuantitas harus bilangan bulat. Tindak lanjut: gunakan validasi integer dan pesan error yang eksplisit.
+
+**Alasan severity/priority:** Perubahan nilai tanpa konfirmasi dapat menyebabkan jumlah pesanan berbeda dari yang dimaksud pengguna.
+
+<a id="issue-38"></a>
+
+### Issue #38 — Pencarian tanpa hasil menampilkan semua produk
+**Final:** Major / P2 · **Area:** Katalog / Pencarian · **TC:** TC-EXP-02 · **Eksekusi:** TE-86 ([Run 31](https://localhost/run/31/#c86)) · **Issue:** [#38](https://github.com/SallVea/UTS-PPL/issues/38)
+
+Keyword tanpa kecocokan tetap menampilkan `26 products found` dan seluruh katalog; oracle menampilkan `0 products found` beserta pesan kosong. Tindak lanjut: perbaiki query pencarian dan tampilkan empty state.
+
+**Alasan severity/priority:** Hasil pencarian menyesatkan pengguna dan bertentangan dengan oracle.

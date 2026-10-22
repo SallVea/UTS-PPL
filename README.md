@@ -50,7 +50,14 @@ README.md
 - [Notulen triage](evidence-uts/triage-notes.md) — 2–3 kalimat per issue.
 - [Matriks severity & priority](evidence-uts/severity-priority-matrix.md) — definisi dan alasan final.
 - [Traceability](evidence-uts/t8-traceability.md) — issue ↔ TC ↔ eksekusi Kiwi ↔ evidence.
-- [Evidence screenshots](evidence-uts/screenshots/) — 29 file evidence, termasuk pembanding #34.
+- [Evidence screenshots](evidence-uts/screenshots/) — 33 file evidence, termasuk pembanding #34 dan #35–#38.
+
+## Dokumen T9
+
+- [T9 Test Execution Summary Report (PDF)](laporan/T9-test-execution-summary.pdf) — 9 halaman, keputusan **NO-GO**.
+- [Sumber Markdown](laporan/T9-test-execution-summary.md) — teks dan tabel laporan.
+- [Data Run 31](laporan/data/run31-executions.json) dan [data issue](laporan/data/issues.json) — data mentah metrik.
+- [Panduan regenerasi](laporan/README.md) — grafik, DOCX, dan PDF.
 
 ## Alur pelaporan bug
 

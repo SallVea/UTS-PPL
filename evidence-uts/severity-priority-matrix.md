@@ -45,6 +45,10 @@ Dokumen ini menjadi acuan final penentuan severity/priority seluruh bug CilacapT
 | [#32](https://github.com/SallVea/UTS-PPL/issues/32) | Checkout / Pembayaran | Major | P1 | Checkout gagal total dan invoice tidak terbentuk. |
 | [#33](https://github.com/SallVea/UTS-PPL/issues/33) | Login | Minor | P2 | Pesan validasi tidak spesifik, tetapi login tetap dicegah. |
 | [#34](https://github.com/SallVea/UTS-PPL/issues/34) | Checkout / Pembayaran | Major | P2 | Risiko duplikasi order akibat dua request. |
+| [#35](https://github.com/SallVea/UTS-PPL/issues/35) | Login / Auth | Minor | P2 | Pesan validasi email menyesatkan, tetapi login tetap dicegah. |
+| [#36](https://github.com/SallVea/UTS-PPL/issues/36) | Keranjang | Minor | P2 | Input huruf merusak total keranjang, tetapi dapat diperbaiki dengan input ulang. |
+| [#37](https://github.com/SallVea/UTS-PPL/issues/37) | Keranjang | Minor | P2 | Nilai desimal berubah tanpa peringatan dan berpotensi mengubah jumlah pesanan. |
+| [#38](https://github.com/SallVea/UTS-PPL/issues/38) | Katalog / Pencarian | Major | P2 | Hasil pencarian menampilkan seluruh katalog dan menyesatkan pengguna. |
 
 ## 4. Catatan
 - Severity ditentukan oleh dampak teknis, bukan tingkat urgensi bisnis.
