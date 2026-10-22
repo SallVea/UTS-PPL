@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Panduan pelaporan bug (README)
+    url: https://github.com/SallVea/UTS-PPL#alur-pelaporan-bug
+    about: Baca konvensi label, evidence, dan penautan ke Kiwi TCMS sebelum membuat issue.
+  - name: Aplikasi yang diuji (AUT)
+    url: https://with-bugs.practicesoftwaretesting.com
+    about: Build staging Sprint 5 yang sengaja berisi bug.
+  - name: Acuan perilaku benar
+    url: https://practicesoftwaretesting.com
+    about: Versi tanpa cacat sebagai test oracle.

@@ -1,0 +1,155 @@
+name: Bug Report
+description: Laporkan bug hasil pengujian CilacapTools (AUT staging Sprint 5) sesuai format UTS PPL.
+title: "[BUG][Area] "
+labels: ["bug", "qa:ready"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Terima kasih sudah melaporkan bug. Isi seluruh field wajib agar bug dapat direproduksi
+        oleh anggota lain hanya dari langkah tertulis.
+
+        **Aturan validitas:** bandingkan selalu dengan https://practicesoftwaretesting.com
+        (versi tanpa cacat). Perilaku yang sama persis dengan versi tanpa cacat **bukan bug** —
+        catat sebagai observasi di Session Notes.
+
+  - type: input
+    id: test-case
+    attributes:
+      label: ID Test Case (Kiwi TCMS)
+      description: ID test case yang dieksekusi, mis. TC-CORE-01 atau TC-EP-04.
+      placeholder: TC-CORE-01
+    validations:
+      required: true
+
+  - type: input
+    id: kiwi-execution
+    attributes:
+      label: URL / ID eksekusi Kiwi
+      description: Tempel URL eksekusi FAIL di Kiwi TCMS (mis. https://localhost/run/31/#c1) atau tulis ID eksekusi.
+      placeholder: "Run 31 - Execution 55"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: Dampak teknis bug terhadap sistem (bukan prioritas bisnis).
+      options:
+        - Critical
+        - Major
+        - Minor
+        - Trivial
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: Urgensi perbaikan. P1 = blokir rilis, P2 = target sprint ini.
+      options:
+        - P1
+        - P2
+        - P3
+        - P4
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Tipe bug
+      options:
+        - Fungsional
+        - UI/UX
+        - Aksesibilitas
+        - Performa
+        - Regression
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Lingkungan uji
+      description: Browser + versi, OS, viewport/perangkat, build yang diuji.
+      placeholder: Chrome 141 / Windows 11 / 1366x768 / Build-2024-S5-01
+    validations:
+      required: true
+
+  - type: textarea
+    id: preconditions
+    attributes:
+      label: Pre-condition
+      description: Kondisi awal sebelum langkah reproduksi (akun, isi keranjang, halaman).
+      placeholder: Sudah login sebagai customer@practicesoftwaretesting.com; keranjang berisi 1 produk.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Langkah reproduksi
+      description: Tulis langkah bernomor yang dapat diikuti anggota lain tanpa bertanya.
+      placeholder: |
+        1. Buka https://with-bugs.practicesoftwaretesting.com
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Hasil yang diharapkan (acuan versi tanpa cacat)
+      description: Tuliskan hasil di https://practicesoftwaretesting.com sebagai oracle.
+      placeholder: Pada versi tanpa cacat, ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Hasil aktual
+      description: Perilaku yang teramati di AUT, termasuk pesan error atau nilai yang salah.
+      placeholder: Pada with-bugs, ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: |
+        Wajib. Tempel screenshot layar penuh (drag & drop), tautan screen recording untuk bug
+        intermiten/urutan interaksi, dan log console untuk error JavaScript.
+        Nama berkas mengikuti pola BUG-001_judul-singkat.png.
+      placeholder: |
+        Screenshot: BUG-001_logo-broken.png
+        Recording: BUG-001_click-confirm.mp4
+        Console: BUG-001_console.log
+    validations:
+      required: true
+
+  - type: input
+    id: affected-pages
+    attributes:
+      label: Halaman / area terdampak
+      description: Jika akar masalah sama di beberapa halaman, tulis semuanya di sini (satu issue untuk satu akar masalah).
+      placeholder: Beranda, Header, Halaman Detail Produk
+
+  - type: checkboxes
+    id: validity
+    attributes:
+      label: Checklist validitas bug
+      options:
+        - label: Sudah direproduksi minimal 2 kali (atau bukti recording untuk bug intermiten).
+          required: true
+        - label: Sudah dibandingkan dengan versi tanpa cacat dan hasilnya berbeda.
+          required: true
+        - label: Sudah dicek tidak duplikat; jika akar masalah sama, gunakan satu issue dengan daftar halaman terdampak.
+          required: true
+        - label: Severity dan priority sudah sesuai matriks dan alasannya dijelaskan pada body issue.
+          required: true
