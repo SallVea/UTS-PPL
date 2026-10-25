@@ -1,0 +1,392 @@
+{
+  "generated_at_utc": "2026-10-25T10:40:14Z",
+  "source": "Kiwi TCMS XML-RPC",
+  "product": "CilacapTools",
+  "product_id": 3,
+  "rows": [
+    {
+      "id": 1,
+      "summary": "[TC-CORE-01] Beranda - Verifikasi logo dan menu navigasi utama berfungsi",
+      "category": "Beranda",
+      "priority": "P1",
+      "author": "atsaal",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 2,
+      "summary": "[TC-CORE-02] Beranda - Klik produk membuka halaman detail produk yang sesuai",
+      "category": "Beranda",
+      "priority": "P1",
+      "author": "atsaal",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 3,
+      "summary": "[TC-CORE-03] Login - Alur sukses: masuk dengan kredensial valid dan verifikasi redirect serta header",
+      "category": "Login",
+      "priority": "P1",
+      "author": "atsaal",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 4,
+      "summary": "[TC-CORE-04] Keranjang - Tambah produk dari detail ke keranjang belanja",
+      "category": "Keranjang & Checkout",
+      "priority": "P1",
+      "author": "ikhsan",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 5,
+      "summary": "[TC-CORE-05] Keranjang - Ubah kuantitas produk valid memperbarui subtotal dan total",
+      "category": "Keranjang & Checkout",
+      "priority": "P1",
+      "author": "ikhsan",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 6,
+      "summary": "[TC-CORE-06] Keranjang - Hapus produk dari keranjang dan verifikasi hitung ulang total",
+      "category": "Keranjang & Checkout",
+      "priority": "P1",
+      "author": "ikhsan",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 7,
+      "summary": "[TC-CORE-07] Checkout - Selesaikan proses checkout pembayaran hingga konfirmasi invoice",
+      "category": "Keranjang & Checkout",
+      "priority": "P1",
+      "author": "atsaal",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 8,
+      "summary": "[TC-EP-01] Quantity - Qty 1 (Batas bawah partisi valid)",
+      "category": "EP-BVA",
+      "priority": "P1",
+      "author": "Gading",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 9,
+      "summary": "[TC-EP-02] Quantity - Qty 0 (Tepat di bawah batas bawah / invalid)",
+      "category": "EP-BVA",
+      "priority": "P2",
+      "author": "Gading",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 10,
+      "summary": "[TC-EP-03] Quantity - Qty 10 (Wakil partisi valid tengah)",
+      "category": "EP-BVA",
+      "priority": "P2",
+      "author": "Gading",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 11,
+      "summary": "[TC-EP-04] Quantity - Qty 100 (U+1, tepat di atas batas stok 99 / invalid)",
+      "category": "EP-BVA",
+      "priority": "P2",
+      "author": "Gading",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 12,
+      "summary": "[TC-EP-05] Email Login - Validasi format email valid diterima oleh parser form (P1 format)",
+      "category": "EP-BVA",
+      "priority": "P1",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 13,
+      "summary": "[TC-EP-06] Email Login - Format invalid tanpa karakter '@'",
+      "category": "EP-BVA",
+      "priority": "P2",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 14,
+      "summary": "[TC-EP-07] Email Login - Format invalid tanpa nama domain",
+      "category": "EP-BVA",
+      "priority": "P2",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 15,
+      "summary": "[TC-EP-08] Expiration Date - Tanggal valid masa depan (MM/YYYY)",
+      "category": "EP-BVA",
+      "priority": "P1",
+      "author": "Gading",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 16,
+      "summary": "[TC-EP-09] Expiration Date - Bulan 13 dan 00 (di luar rentang bulan 01-12)",
+      "category": "EP-BVA",
+      "priority": "P2",
+      "author": "Gading",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 17,
+      "summary": "[TC-EP-10] Expiration Date - Tanggal lampau (Kartu sudah kedaluwarsa)",
+      "category": "EP-BVA",
+      "priority": "P2",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 18,
+      "summary": "[TC-EG-01] Kuantitas berubah cepat berulang kali menjaga konsistensi total",
+      "category": "Error Guessing",
+      "priority": "P1",
+      "author": "ikhsan",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 19,
+      "summary": "[TC-EG-02] Konsistensi harga satuan antara katalog, keranjang, dan checkout",
+      "category": "Error Guessing",
+      "priority": "P1",
+      "author": "atsaal",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 20,
+      "summary": "[TC-EG-03] Halaman akun tidak dapat diakses via tombol Back browser setelah logout",
+      "category": "Error Guessing",
+      "priority": "P2",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 21,
+      "summary": "[TC-EG-04] Persistensi filter kategori dan slider harga saat navigasi paginasi",
+      "category": "Error Guessing",
+      "priority": "P2",
+      "author": "ikhsan",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 22,
+      "summary": "[TC-EG-05] Pencarian produk tidak sensitif huruf besar/kecil (case insensitive)",
+      "category": "Error Guessing",
+      "priority": "P2",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 23,
+      "summary": "[TC-NEG-01] Input kosong: Seluruh field wajib form billing dikosongkan saat submit",
+      "category": "Negatif-Edge",
+      "priority": "P2",
+      "author": "atsaal",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 24,
+      "summary": "[TC-NEG-02] Nilai negatif: Input angka negatif (-1) pada kuantitas keranjang",
+      "category": "Negatif-Edge",
+      "priority": "P2",
+      "author": "Gading",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 25,
+      "summary": "[TC-NEG-03] Tipe salah: Input karakter alfabet/huruf pada field nomor pembayaran",
+      "category": "Negatif-Edge",
+      "priority": "P2",
+      "author": "Gading",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 26,
+      "summary": "[TC-NEG-04] Karakter khusus: Input simbol khusus pada kotak pencarian beranda",
+      "category": "Negatif-Edge",
+      "priority": "P2",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 27,
+      "summary": "[TC-NEG-05] Buffer panjang: Input string 300+ karakter pada field alamat billing",
+      "category": "Negatif-Edge",
+      "priority": "P2",
+      "author": "atsaal",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 28,
+      "summary": "[TC-NEG-06] Karakter emoji: Input karakter emoji Unicode pada field kota billing",
+      "category": "Negatif-Edge",
+      "priority": "P2",
+      "author": "ikhsan",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 29,
+      "summary": "[TC-NEG-07] Klik ganda cepat pada tombol konfirmasi pesanan akhir",
+      "category": "Negatif-Edge",
+      "priority": "P1",
+      "author": "atsaal",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 30,
+      "summary": "[TC-NEG-08] Tombol Back browser setelah proses pembayaran order selesai",
+      "category": "Negatif-Edge",
+      "priority": "P2",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 31,
+      "summary": "[TC-EXP-01] Charter 1: Eksplorasi manipulasi keranjang dan alur checkout dinamis",
+      "category": "Exploratory",
+      "priority": "P2",
+      "author": "ikhsan",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 32,
+      "summary": "[TC-EXP-02] Charter 2: Eksplorasi pencarian katalog dan ketahanan sesi login/logout",
+      "category": "Exploratory",
+      "priority": "P2",
+      "author": "ikhsan",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 34,
+      "summary": "[TC-EP-12] Quantity - Input huruf dan desimal pada field kuantitas (EP P4/P5)",
+      "category": "EP-BVA",
+      "priority": "P2",
+      "author": "atsaal",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 35,
+      "summary": "[TC-EP-11] Email Login - Format invalid dengan dua simbol '@' (BVA 2 simbol @)",
+      "category": "EP-BVA",
+      "priority": "P2",
+      "author": "atsaal",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 36,
+      "summary": "[TC-A11Y-01] Pemeriksaan Label Input Email dan Password pada Halaman Login",
+      "category": "Aksesibilitas",
+      "priority": "P2",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 37,
+      "summary": "[TC-A11Y-02] Pemeriksaan Urutan Fokus Keyboard pada Halaman Login",
+      "category": "Aksesibilitas",
+      "priority": "P2",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 38,
+      "summary": "[TC-T6-01] Beranda & Filters - Verifikasi Panel Filter pada Tampilan Mobile",
+      "category": "croos browser & responsive",
+      "priority": "P2",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 39,
+      "summary": "[TC-T6-02] Search Produk - Verifikasi Fungsi Pencarian pada Berbagai Browser dan viewport mobile",
+      "category": "croos browser & responsive",
+      "priority": "P2",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 40,
+      "summary": "[TC-T6-03] Detail Produk - Verifikasi Tampilan dan Fungsi pada Berbagai Browser dan Viewport",
+      "category": "croos browser & responsive",
+      "priority": "P2",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 41,
+      "summary": "[TC-T6-04] Keranjang & Checkout - Verifikasi Alur Pembelian pada Berbagai Browser dan Viewport",
+      "category": "croos browser & responsive",
+      "priority": "P1",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 42,
+      "summary": "[TC-T6-05] Contact Us - Verifikasi Tampilan dan Fungsi Formulir pada Berbagai Browser dan Viewport",
+      "category": "croos browser & responsive",
+      "priority": "P2",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 43,
+      "summary": "[TC-T6-06] Login - Verifikasi Fungsi dan Tampilan Login pada Berbagai Browser dan Viewport",
+      "category": "croos browser & responsive",
+      "priority": "P1",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 44,
+      "summary": "[TC-T6-07] Register - Verifikasi Tampilan dan Validasi Formulir pada Berbagai Browser dan Viewport",
+      "category": "croos browser & responsive",
+      "priority": "P2",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 45,
+      "summary": "[TC-T6-08] Navigasi Home - Verifikasi Fungsi Navigasi pada Berbagai Browser dan Viewport",
+      "category": "croos browser & responsive",
+      "priority": "P2",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 46,
+      "summary": "[TC-T6-09] Filters - Verifikasi Ketersediaan Panel Filter pada Viewport 820×1180",
+      "category": "croos browser & responsive",
+      "priority": "P2",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 47,
+      "summary": "[TC-A11Y-03] Detail Produk - Audit Aksesibilitas Menggunakan axe DevTools, WAVE, dan Lighthouse Mobile",
+      "category": "Aksesibilitas",
+      "priority": "P2",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 48,
+      "summary": "[TC-A11Y-04] Login - Audit Aksesibilitas Menggunakan axe DevTools, WAVE, dan Lighthouse Mobile",
+      "category": "Aksesibilitas",
+      "priority": "P2",
+      "author": "mema",
+      "execution_count_plan1": 1
+    },
+    {
+      "id": 49,
+      "summary": "[TC-T6-10] Search Produk - Verifikasi Keberhasilan Pencarian pada Viewport 820×1180",
+      "category": "croos browser & responsive",
+      "priority": "P2",
+      "author": "mema",
+      "execution_count_plan1": 1
+    }
+  ]
+}

@@ -8,10 +8,23 @@ Laporan T9 dalam format PDF dan sumber Markdown.
 | `T9-test-execution-summary.md` | Sumber Markdown |
 | `T9-test-execution-summary.docx` | Sumber DOCX untuk regenerasi PDF |
 | `data/run31-executions.json` | Data 34 eksekusi Run 31 dari Kiwi |
-| `data/issues.json` | Data 32 issue GitHub #7–#38 |
+| `data/issues.json` | Data 34 issue GitHub #7–#40 |
+| `data/kiwi-executions.json` | Data 48 eksekusi plan 1 dari Kiwi |
+| `data/kiwi-cases.json` | Data 48 test case CilacapTools di plan 1 |
+| `data/meta.json` | Cap waktu UTC, sumber data, jumlah eksekusi plan 1, dan jumlah issue |
+| `kiwi-snapshot.md` | Snapshot plan 1 dan plan 2: status, run, kategori, prioritas, tester, T6/T7, dan FAILED |
+| `sync_kiwi.py` | Skrip sinkronisasi baca-saja dari Kiwi dan GitHub |
 | `img/` | Grafik status, priority, severity, dan defect density |
 | `generate_charts.py` | Generator grafik |
 | `build_report.py` | Generator DOCX/PDF dan tata letak |
+
+## Sinkronisasi data
+
+```bash
+python3 laporan/sync_kiwi.py
+```
+
+Kredensial Kiwi dibaca dari konfigurasi lokal saat dijalankan; tidak disimpan di repo.
 
 ## Regenerasi
 
@@ -21,4 +34,4 @@ python3 laporan/build_report.py
 cd laporan && libreoffice --headless --convert-to pdf T9-test-execution-summary.docx --outdir .
 ```
 
-Sumber data: Kiwi TCMS Run 31 (`https://localhost/run/31/`) dan GitHub Issues #7–#38.
+Sumber data T9: Kiwi TCMS Run 31 (`https://localhost/run/31/`) dan GitHub Issues #7–#38. Snapshot plan 1 memakai seluruh issue #7–#40.

@@ -34,6 +34,8 @@ Setiap bug memiliki minimal satu eksekusi FAIL di Run 31. Untuk #24 dan #25 yang
 | [#36](https://github.com/SallVea/UTS-PPL/issues/36) | TC-EP-12 | TE-87 / case 34 | FAILED | [screenshot](https://raw.githubusercontent.com/SallVea/UTS-PPL/main/evidence-uts/screenshots/BUG-036_quantity-letters.png) | [notulen](https://github.com/SallVea/UTS-PPL/blob/main/evidence-uts/triage-notes.md#issue-36) |
 | [#37](https://github.com/SallVea/UTS-PPL/issues/37) | TC-EP-12 | TE-87 / case 34 | FAILED | [oracle popup](https://raw.githubusercontent.com/SallVea/UTS-PPL/main/evidence-uts/screenshots/BUG-037_quantity-decimal.png) | [notulen](https://github.com/SallVea/UTS-PPL/blob/main/evidence-uts/triage-notes.md#issue-37) |
 | [#38](https://github.com/SallVea/UTS-PPL/issues/38) | TC-EXP-02 | TE-86 / case 32 | FAILED | [screenshot](https://raw.githubusercontent.com/SallVea/UTS-PPL/main/evidence-uts/screenshots/BUG-038_search-no-result-all-products.png) | [notulen](https://github.com/SallVea/UTS-PPL/blob/main/evidence-uts/triage-notes.md#issue-38) |
+| [#39](https://github.com/SallVea/UTS-PPL/issues/39) | TC-A11Y-01 | TE-89 / case 36 (run 32) | FAILED | TIDAK ADA berkas di repo · [issue #39](https://github.com/SallVea/UTS-PPL/issues/39) (body: gambar=ya, lampiran=tidak; komentar: gambar=tidak, lampiran=tidak) | TIDAK ADA |
+| [#40](https://github.com/SallVea/UTS-PPL/issues/40) | TC-A11Y-02 | TE-90 / case 37 (run 33) | FAILED | TIDAK ADA berkas di repo · [issue #40](https://github.com/SallVea/UTS-PPL/issues/40) (body: gambar=ya, lampiran=tidak; komentar: gambar=tidak, lampiran=tidak) | TIDAK ADA |
 
 ## Catatan Evidence
 - Screenshot berasal dari lampiran issue dan komentar eksekusi Kiwi, lalu disalin ke `evidence-uts/screenshots/`.
@@ -41,3 +43,4 @@ Setiap bug memiliki minimal satu eksekusi FAIL di Run 31. Untuk #24 dan #25 yang
 - Screen recording untuk #34 (klik ganda) belum tersedia; bukti saat ini berupa dua screenshot (with-bugs: 2 request 500 dan oracle: 2 invoice) serta urutan langkah pada komentar eksekusi.
 - Log network untuk #30 dan #32 sudah terlihat pada screenshot (status 500); log mentah belum diekspor.
 - #35–#38 ditemukan pada 22 Oktober 2026 dan ditautkan ke TE-88/TE-87/TE-86 melalui komentar eksekusi; #37 memakai screenshot oracle sebagai pembanding karena layar with-bugs untuk nilai 1.5 belum tersedia.
+- #39 dan #40 berasal dari run T7 32/33, bukan Run 31; keduanya tidak punya berkas evidence di repo. Body issue memuat gambar; komentar issue tidak memuat gambar atau lampiran.
