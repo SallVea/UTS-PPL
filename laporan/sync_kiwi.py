@@ -267,6 +267,14 @@ def write_json(path: Path, payload):
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
+def read_issues_json(path: Path):
+    """Baca issues.json, mendukung format lama (array) dan baru (wrapper)."""
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if isinstance(data, dict) and "issues" in data:
+        return data["issues"]
+    return data  # format lama: array
+
+
 def main() -> int:
     generated_at = utc_now()
     DATA.mkdir(parents=True, exist_ok=True)
@@ -305,9 +313,18 @@ def main() -> int:
         )
 
     if issues is not None:
-        write_json(DATA / "issues.json", issues)
+        write_json(
+            DATA / "issues.json",
+            {
+                "generated_at_utc": generated_at,
+                "source": "GitHub Issues SallVea/UTS-PPL",
+                "count": len(issues),
+                "issues": issues,
+            },
+        )
 
     if kiwi is not None or issues is not None:
+        issue_numbers = [i["number"] for i in issues] if issues else []
         write_json(
             DATA / "meta.json",
             {
@@ -318,6 +335,7 @@ def main() -> int:
                 ],
                 "plan1_executions": len(kiwi["rows"]) if kiwi else None,
                 "issues": len(issues) if issues is not None else None,
+                "issue_range": f"#{min(issue_numbers)}–#{max(issue_numbers)}" if issue_numbers else None,
             },
         )
 
@@ -327,7 +345,11 @@ def main() -> int:
             print(f"{name}: GAGAL (tidak dibuat)")
             continue
         if name == "issues.json":
-            print(f"{name}: {len(json.loads(path.read_text(encoding='utf-8')))} baris")
+            data = json.loads(path.read_text(encoding="utf-8"))
+            if isinstance(data, dict) and "issues" in data:
+                print(f"{name}: {data['count']} issue (wrapper)")
+            else:
+                print(f"{name}: {len(data)} baris (array lama)")
         elif name == "meta.json":
             print(f"{name}: 1 objek")
         else:

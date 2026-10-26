@@ -1,10 +1,10 @@
 # Kiwi TCMS Snapshot — Plan 1 dan Plan 2
 
-- Cap waktu UTC: **2026-10-25T10:40:14Z**
+- Cap waktu UTC: **2026-10-26T05:07:03Z**
 - Sumber: Kiwi TCMS XML-RPC (`TestExecution.filter`, `TestRun.filter`, `TestCase.filter`, `TestExecution.get_comments`, `TestExecution.list_attachments`)
 - Issue GitHub: **34** (#7–#40), semua OPEN
 - Data mentah: `laporan/data/kiwi-executions.json` (48 baris), `laporan/data/kiwi-cases.json` (48 baris), `laporan/data/meta.json`
-- T9 sengaja tidak diubah: tetap memakai himpunan Run 31 dan issue #7–#38.
+- T9 memakai himpunan Plan 1 (48 TC) dan issue #7–#40.
 
 ## 1. Ringkasan status
 
@@ -186,13 +186,4 @@ T7: **4 TC**, semuanya FAILED (TC-A11Y-01/02 di run 32/33; TC-A11Y-03/04 di run 
 | 104 | 47 | TC-A11Y-04 | Login - Audit Aksesibilitas Menggunakan axe DevTools, WAVE, dan Lighthouse Mobile | TIDAK ADA | gambar=tidak; lampiran=tidak |
 
 Catatan: 39 eksekusi FAILED; 24 di antaranya menyebut minimal satu nomor issue di komentar Kiwi, 15 tidak menyebut issue. Isi komentar tidak disalin; hanya nomor issue dan penanda boolean.
-
-## 7. Catatan drift data
-
-| Waktu | Plan 1 run | Plan 1 eksekusi | Status plan 1 | Plan 2 eksekusi |
-|---|---:|---:|---|---:|
-| 2026-10-25T09:16Z | 17 | 47 | 6 P, 37 F, 2 B, 1 ERROR, 1 IDLE | 30 |
-| 2026-10-25T10:40Z | 15 | 48 | 7 P, 39 F, 2 B | 31 |
-
-Perubahan terjadi di Kiwi selama sesi (bukan oleh skrip ini): run kosong 6/10/11 tidak lagi ada di plan 1; run 35 dan 38 pindah ke plan 2; run 46/47 ditambahkan; TE 102 berubah IDLE → PASSED.
 

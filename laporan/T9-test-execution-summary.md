@@ -11,22 +11,22 @@
 | Build | `Build-2024-S5-01` |
 | Lingkungan | Staging — `https://with-bugs.practicesoftwaretesting.com` |
 | Oracle | `https://practicesoftwaretesting.com` |
-| Periode eksekusi | 21–22 Oktober 2026 |
-| Data per | 22 Oktober 2026 |
+| Periode eksekusi | 21–25 Oktober 2026 |
+| Data per | 25 Oktober 2026 |
 | Penyusun | Atsaal (R1 — QA Lead / Test Manager) |
 | Repositori | [SallVea/UTS-PPL](https://github.com/SallVea/UTS-PPL) |
-| Kiwi TCMS | [Run 31](https://localhost/run/31/) |
+| Kiwi TCMS | [Plan 1](https://localhost/plan/1/) (Run 31 konsolidasi + Run 32–47 T6/T7) |
 | Keputusan | **NO-GO** |
 
-> **Kesimpulan:** `Build-2024-S5-01` **NO-GO**. Dari 34 test case, 27 FAILED dan 2 BLOCKED; 12 issue Critical/Major masih OPEN.
+> **Kesimpulan:** `Build-2024-S5-01` **NO-GO**. Dari 48 test case, 39 FAILED dan 2 BLOCKED; 14 issue Critical/Major masih OPEN.
 
-Dokumen ini merupakan bagian **Bab VII (Metrik dan Summary)** laporan UTS PPL CilacapTools. Seluruh angka dihitung dari Run 31 dan 32 issue OPEN per 22 Oktober 2026.
+Dokumen ini merupakan bagian **Bab VII (Metrik dan Summary)** laporan UTS PPL CilacapTools. Seluruh angka dihitung dari Plan 1 dan 34 issue OPEN per 25 Oktober 2026.
 
 ## Ringkasan Eksekutif
 
-Run 31 mengeksekusi **34 dari 34 test case (100%)**. Hasilnya: **5 PASSED, 27 FAILED, dan 2 BLOCKED**. Pass rate hanya **14,7%**, sedangkan 32 issue masih **OPEN** di GitHub: 2 Critical, 10 Major, 16 Minor, dan 4 Trivial.
+Plan 1 mengeksekusi **48 dari 48 test case (100%)**. Hasilnya: **7 PASSED, 39 FAILED, dan 2 BLOCKED**. Pass rate hanya **14,6%**, sedangkan 34 issue masih **OPEN** di GitHub: 2 Critical, 12 Major, 16 Minor, dan 4 Trivial.
 
-Quality gate tidak terpenuhi. Seluruh P1 dan P2 wajib PASS, tetapi hanya **1 dari 13 P1** yang PASS dan hanya **4 dari 21 P2** yang PASS. Dua test case P2 juga BLOCKED. Karena itu, rekomendasi T9 adalah **NO-GO** untuk `Build-2024-S5-01`.
+Quality gate tidak terpenuhi. Seluruh P1 dan P2 wajib PASS, tetapi hanya **1 dari 15 P1** yang PASS dan hanya **6 dari 33 P2** yang PASS. Dua test case P2 juga BLOCKED. Karena itu, rekomendasi T9 adalah **NO-GO** untuk `Build-2024-S5-01`.
 
 **Temuan utama yang memblokir rilis:**
 
@@ -42,17 +42,17 @@ Quality gate tidak terpenuhi. Seluruh P1 dan P2 wajib PASS, tetapi hanya **1 dar
 
 | Item | Nilai |
 |---|---|
-| Test Run | 31 — UTS PPL Sprint 5 - Test Run Konsolidasi T4 |
+| Test Run | Plan 1 — Run 31 konsolidasi + Run 32–47 T6/T7 |
 | Test Plan | Test Plan UTS PPL Sprint 5 - CilacapTools |
 | Build | `Build-2024-S5-01` (Angular 20.0.5) |
 | Manajer | Atsaal |
-| Eksekutor | Atsaal (11 TC), Gading (8 TC), Mema (8 TC), Ikhsan (7 TC) |
-| Total test case | 34 |
-| Status akhir | 5 PASSED, 27 FAILED, 2 BLOCKED |
-| Sumber data | Kiwi TCMS Run 31 dan GitHub Issues #7–#38 |
-| Batas cakupan | Cross-browser T6 dan aksesibilitas T7 belum termasuk dalam Run 31 |
+| Eksekutor | Atsaal (11 TC), Gading (8 TC), Mema (22 TC), Ikhsan (7 TC) |
+| Total test case | 48 |
+| Status akhir | 7 PASSED, 39 FAILED, 2 BLOCKED |
+| Sumber data | Kiwi TCMS Plan 1 dan GitHub Issues #7–#40 |
+| Batas cakupan | — |
 
-Seluruh 34 test case sudah memiliki status, build, dan komentar eksekusi. Dua test case yang BLOCKED adalah `TC-EP-10` (Expiration Date lampau) dan `TC-NEG-08` (tombol Back setelah pembayaran); keduanya bergantung pada alur pembayaran yang belum stabil.
+Seluruh 48 test case sudah memiliki status, build, dan komentar eksekusi. Dua test case yang BLOCKED adalah `TC-EP-10` (Expiration Date lampau) dan `TC-NEG-08` (tombol Back setelah pembayaran); keduanya bergantung pada alur pembayaran yang belum stabil. 14 test case T6/T7 dieksekusi pada Run 32–47 (21–25 Oktober 2026).
 
 ## 2. Test Execution Summary
 
@@ -60,31 +60,31 @@ Seluruh 34 test case sudah memiliki status, build, dan komentar eksekusi. Dua te
 
 | Metrik | Nilai | Persentase |
 |---|---:|---:|
-| Test case direncanakan | 34 | 100% |
-| Test case dieksekusi | 34 | 100% |
-| PASSED | 5 | 14,7% |
-| FAILED | 27 | 79,4% |
-| BLOCKED | 2 | 5,9% |
-| Issue OPEN | 32 | — |
-| Defect density keseluruhan | 94,1 bug per 100 TC | — |
+| Test case direncanakan | 48 | 100% |
+| Test case dieksekusi | 48 | 100% |
+| PASSED | 7 | 14,6% |
+| FAILED | 39 | 81,3% |
+| BLOCKED | 2 | 4,2% |
+| Issue OPEN | 34 | — |
+| Defect density keseluruhan | 94,1 bug per 100 TC (area) / 100,0 bug per 100 TC (48 TC) | — |
 
-Coverage eksekusi **100%** berarti seluruh test case yang direncanakan sudah dijalankan. Namun coverage lulus hanya **14,7%**, sehingga eksekusi tidak dapat dianggap berhasil.
+Coverage eksekusi **100%** berarti seluruh test case yang direncanakan sudah dijalankan. Namun coverage lulus hanya **14,6%** (48 TC) / **14,7%** (34 TC mapped Run 31), sehingga eksekusi tidak dapat dianggap berhasil.
 
 ![Status eksekusi Run 31](img/status.png)
 
-**Gambar 7.1** Status eksekusi Run 31: 27 FAILED, 5 PASSED, 2 BLOCKED.
+**Gambar 7.1** Status eksekusi Plan 1: 39 FAILED, 7 PASSED, 2 BLOCKED. *Grafik belum diregenerasi; data basi.*
 
 **Tabel 7.3** Hasil berdasarkan priority test case
 
 | Priority | Total | PASSED | FAILED | BLOCKED | Pass rate |
 |---|---:|---:|---:|---:|---:|
-| P1 | 13 | 1 | 12 | 0 | 7,7% |
-| P2 | 21 | 4 | 15 | 2 | 19,0% |
-| **Total** | **34** | **5** | **27** | **2** | **14,7%** |
+| P1 | 15 | 1 | 14 | 0 | 6,7% |
+| P2 | 33 | 6 | 25 | 2 | 18,2% |
+| **Total** | **48** | **7** | **39** | **2** | **14,6%** |
 
 ![Hasil per priority](img/priority-status.png)
 
-**Gambar 7.2** Komposisi hasil eksekusi pada P1 dan P2.
+**Gambar 7.2** Komposisi hasil eksekusi pada P1 dan P2 (Plan 1). *Grafik belum diregenerasi; data basi.*
 
 ## 3. Test Coverage Fitur Paket
 
@@ -102,7 +102,9 @@ Test case per paket: Beranda & Katalog = CORE-01, CORE-02, EG-02, EG-04, EG-05, 
 
 Tidak ada paket fitur yang lulus penuh. **Keranjang** menjadi area terburuk: 10 dari 10 test case FAILED, termasuk kalkulasi total, batas kuantitas, dan validasi tipe data. **Checkout & Pembayaran** hanya lulus 2 dari 11 test case dan menyisakan 2 BLOCKED, sehingga alur uang tidak dapat diverifikasi sampai selesai.
 
-Cakupan non-fungsional belum dijalankan pada Run 31. Matriks cross-browser/responsive T6 dan audit aksesibilitas T7 harus ditambahkan sebelum laporan akhir; keduanya belum boleh dihitung sebagai coverage yang lulus.
+Catatan: 14 TC T6/T7 tambahan dieksekusi di Run 32–47; coverage 100% untuk 48 TC Plan 1.
+
+Cakupan non-fungsional (T6/T7) sudah dieksekusi pada Run 32–47 (21–25 Oktober 2026); 10 TC T6 (8 FAILED, 2 PASSED), 4 TC T7 (4 FAILED).
 
 ## 4. Defect Density per Area
 
@@ -118,51 +120,52 @@ Defect density dihitung dengan rumus yang diminta soal:
 | Login & Auth | 6 | 3 | **50,0%** | #18, #33, #35 |
 | Keranjang | 10 | 8 | **80,0%** | #20, #21, #22, #26, #28, #29, #36, #37 |
 | Checkout & Pembayaran | 11 | 9 | **81,8%** | #7, #8, #23, #24, #25, #27, #31, #32, #34 |
-| **Total** | **34** | **32** | **94,1%** | #7–#38 |
+| Tanpa area | — | 2 | — | #39, #40 |
+| **Total** | **34** | **34** | **100,0%** | #7–#40 |
 
 ![Defect density per area](img/defect-density.png)
 
-**Gambar 7.3** Defect density per area; Beranda & Katalog paling tinggi karena banyak cacat UI/konten pada sedikit test case.
+**Gambar 7.3** Defect density per area; Beranda & Katalog paling tinggi karena banyak cacat UI/konten pada sedikit test case. *Grafik belum diregenerasi; total bug basi.*
 
-Angka di atas menggunakan **satu area primer per issue** agar total tetap 32, bukan 36. Issue #11, #12, #16, dan #17 memiliki label `scope:home` dan `scope:catalog`; keempatnya dihitung di Beranda & Katalog karena objek utamanya adalah kategori atau produk katalog. Issue #35–#38 adalah temuan tambahan pada putaran eksekusi 22 Oktober dan tetap dihitung agar metrik mencerminkan kondisi repository per 22 Oktober 2026.
+Angka di atas menggunakan **satu area primer per issue** agar total tetap 32, bukan 36. Issue #11, #12, #16, dan #17 memiliki label `scope:home` dan `scope:catalog`; keempatnya dihitung di Beranda & Katalog karena objek utamanya adalah kategori atau produk katalog. Issue #35–#38 adalah temuan tambahan pada putaran eksekusi 22 Oktober dan tetap dihitung agar metrik mencerminkan kondisi repository per 22 Oktober 2026. Issue #39–#40 tidak memiliki label `scope` → dikategorikan **Tanpa area** dan tidak masuk perhitungan density per area.
 
 Defect density tinggi di Beranda & Katalog menunjukkan masalah kualitas konten dan rendering, bukan hanya satu bug fungsional. Di Keranjang dan Checkout, density tinggi disertai FAILED pada hampir semua test case, sehingga dampaknya langsung ke alur bisnis.
 
 ## 5. Distribusi Severity dan Priority
 
-**Tabel 7.6** Distribusi severity dari 32 issue OPEN
+**Tabel 7.6** Distribusi severity dari 34 issue OPEN
 
 | Severity | Jumlah | Persentase | Issue |
 |---|---:|---:|---|
-| Critical | 2 | 6,3% | #7, #8 |
-| Major | 10 | 31,3% | #11, #12, #20, #26, #29, #30, #31, #32, #34, #38 |
-| Minor | 16 | 50,0% | #9, #13, #14, #15, #16, #17, #18, #19, #22, #25, #27, #28, #33, #35, #36, #37 |
-| Trivial | 4 | 12,5% | #10, #21, #23, #24 |
-| **Total** | **32** | **100%** | — |
+| Critical | 2 | 5,9% | #7, #8 |
+| Major | 12 | 35,3% | #11, #12, #20, #26, #29, #30, #31, #32, #34, #38, #39, #40 |
+| Minor | 16 | 47,1% | #9, #13, #14, #15, #16, #17, #18, #19, #22, #25, #27, #28, #33, #35, #36, #37 |
+| Trivial | 4 | 11,8% | #10, #21, #23, #24 |
+| **Total** | **34** | **100%** | — |
 
 ![Distribusi severity](img/severity.png)
 
-**Gambar 7.4** Distribusi severity 32 issue OPEN.
+**Gambar 7.4** Distribusi severity 34 issue OPEN. *Grafik belum diregenerasi; data basi.*
 
-**Tabel 7.7** Distribusi priority dari 32 issue OPEN
+**Tabel 7.7** Distribusi priority dari 34 issue OPEN
 
 | Priority | Jumlah | Persentase | Issue |
 |---|---:|---:|---|
-| P1 | 8 | 25,0% | #7, #8, #11, #12, #20, #26, #31, #32 |
-| P2 | 14 | 43,8% | #9, #15, #18, #25, #27, #28, #29, #30, #33, #34, #35, #36, #37, #38 |
-| P3 | 10 | 31,3% | #10, #13, #14, #16, #17, #19, #21, #22, #23, #24 |
-| **Total** | **32** | **100%** | — |
+| P1 | 8 | 23,5% | #7, #8, #11, #12, #20, #26, #31, #32 |
+| P2 | 16 | 47,1% | #9, #15, #18, #25, #27, #28, #29, #30, #33, #34, #35, #36, #37, #38, #39, #40 |
+| P3 | 10 | 29,4% | #10, #13, #14, #16, #17, #19, #21, #22, #23, #24 |
+| **Total** | **34** | **100%** | — |
 
 **Tabel 7.8** Cross-tab priority dan severity
 
 | Priority | Critical | Major | Minor | Trivial | Total |
 |---|---:|---:|---:|---:|---:|
 | P1 | 2 | 6 | 0 | 0 | **8** |
-| P2 | 0 | 4 | 10 | 0 | **14** |
+| P2 | 0 | 6 | 10 | 0 | **16** |
 | P3 | 0 | 0 | 6 | 4 | **10** |
-| **Total** | **2** | **10** | **16** | **4** | **32** |
+| **Total** | **2** | **12** | **16** | **4** | **34** |
 
-Seluruh P1 masih OPEN. Delapan issue P1 terdiri dari 2 Critical dan 6 Major; ini sudah cukup untuk menggagalkan quality gate tanpa melihat P2. Empat issue P2 yang berkategori Major (#29, #30, #34, #38) juga berpotensi menimbulkan kerugian pengguna jika tidak diperbaiki sebelum rilis.
+Seluruh P1 masih OPEN. Delapan issue P1 terdiri dari 2 Critical dan 6 Major; ini sudah cukup untuk menggagalkan quality gate tanpa melihat P2. Enam issue P2 yang berkategori Major (#29, #30, #34, #38, #39, #40) juga berpotensi menimbulkan kerugian pengguna jika tidak diperbaiki sebelum rilis.
 
 ## 6. Defect Escape Rate
 
@@ -172,12 +175,12 @@ Defect escape rate biasanya dihitung sebagai:
 
 Angka ini **tidak dapat dihitung secara valid di staging** karena:
 
-1. **Tidak ada deployment produksi.** Seluruh 32 issue ditemukan di staging sebelum rilis, sehingga pembilangnya nol dan penyebut produksinya tidak ada.
+1. **Tidak ada deployment produksi.** Seluruh 34 issue ditemukan di staging sebelum rilis, sehingga pembilangnya nol dan penyebut produksinya tidak ada.
 2. **Tidak ada data pasca-rilis.** Belum ada telemetry, laporan pengguna produksi, atau defect backlog yang berasal dari pengguna nyata.
-3. **Siklus pengujian masih berjalan.** Ada 2 test case BLOCKED dan 4 issue tambahan (#35–#38) yang baru masuk pada 22 Oktober; baseline “sebelum rilis” belum final.
+3. **Siklus pengujian masih berjalan.** Ada 2 test case BLOCKED dan 6 issue tambahan (#35–#40) yang baru masuk pada 22 Oktober; baseline “sebelum rilis” belum final.
 4. **Risiko undercount.** Beberapa gejala berbagi akar masalah (misalnya #7/#31 dan #8/#32), sehingga jumlah issue tidak sama dengan jumlah akar defects.
 
-Memaksakan angka **0/32 = 0%** akan menyesatkan karena hanya berarti “belum ada produksi”, bukan “tidak ada defect yang lolos”. Defect escape rate baru bisa dilaporkan setelah ada rilis dan data produksi. Sebagai indikator internal, empat issue #35–#38 yang ditemukan pada putaran tambahan menunjukkan *test-cycle leakage*: variasi input dan area tertentu belum tertangkap pada putaran pertama, bukan escape ke produksi.
+Memaksakan angka **0/34 = 0%** akan menyesatkan karena hanya berarti “belum ada produksi”, bukan “tidak ada defect yang lolos”. Defect escape rate baru bisa dilaporkan setelah ada rilis dan data produksi. Sebagai indikator internal, enam issue #35–#40 yang ditemukan pada putaran tambahan menunjukkan *test-cycle leakage*: variasi input dan area tertentu belum tertangkap pada putaran pertama, bukan escape ke produksi.
 
 ## 7. Evaluasi Quality Gate dan Rekomendasi Go/No-Go
 
@@ -185,10 +188,10 @@ Memaksakan angka **0/32 = 0%** akan menyesatkan karena hanya berarti “belum ad
 
 | Kriteria quality gate | Target | Aktual | Status |
 |---|---|---|---|
-| Seluruh test case P1 PASS | 13/13 PASS | 1/13 PASS, 12/13 FAILED | **GAGAL** |
-| Seluruh test case P2 PASS | 21/21 PASS | 4/21 PASS, 15 FAILED, 2 BLOCKED | **GAGAL** |
-| Tidak ada bug Critical/Major OPEN | 0 OPEN | 12 OPEN (2 Critical, 10 Major) | **GAGAL** |
-| Eksekusi test case 100% | 34/34 | 34/34 | **LULUS** |
+| Seluruh test case P1 PASS | 15/15 PASS | 1/15 PASS, 14/15 FAILED | **GAGAL** |
+| Seluruh test case P2 PASS | 33/33 PASS | 6/33 PASS, 25 FAILED, 2 BLOCKED | **GAGAL** |
+| Tidak ada bug Critical/Major OPEN | 0 OPEN | 14 OPEN (2 Critical, 12 Major) | **GAGAL** |
+| Eksekusi test case 100% | 48/48 | 48/48 | **LULUS** |
 | Tidak ada test case BLOCKED | 0 | 2 | **GAGAL** |
 
 ### Keputusan: NO-GO
@@ -217,7 +220,7 @@ Rilis hanya boleh berstatus **GO** setelah seluruh P1/P2 PASS, tidak ada Critica
 
 **Limitasi pengujian saat ini:**
 
-- T6 (cross-browser/responsive) dan T7 (aksesibilitas) belum masuk Run 31; risiko rendering dan WCAG belum terukur.
+- T6 (cross-browser/responsive) dan T7 (aksesibilitas) sudah dieksekusi pada Run 32–47 (10 TC T6, 4 TC T7); risiko rendering dan WCAG sudah terukur sebagian (8 FAILED, 2 PASSED untuk T6; 4 FAILED untuk T7).
 - Dua test case BLOCKED belum memberikan hasil akhir.
 - Beberapa issue berbagi akar masalah, sehingga defect density berbasis issue dapat lebih tinggi dari jumlah akar defects.
 - Defect escape rate belum dapat dihitung karena belum ada produksi/pasca-rilis.
@@ -232,25 +235,28 @@ Rilis hanya boleh berstatus **GO** setelah seluruh P1/P2 PASS, tidak ada Critica
 | P1 | Perbaiki kategori dan stok #11, #12, #29 | R1 + R2 | Kategori valid; batas stok 99; tidak ada 404 |
 | P1 | Perbaiki pencarian #30 dan #38 | R4 | Tidak ada HTTP 500; keyword tanpa hasil menampilkan 0 produk |
 | P1 | Selesaikan BLOCKED `TC-EP-10` dan `TC-NEG-08` | R1 | Kedua test case punya status final dan evidence |
-| P1 | Jalankan T6 dan T7 | R4 | Matriks browser/responsive dan audit aksesibilitas lengkap |
+| P1 | Evaluasi hasil T6 dan T7 | R4 | 10 TC T6 (8 FAILED, 2 PASSED), 4 TC T7 (4 FAILED) |
 | P2 | Perbaiki Major P2 #34 dan issue P2 lainnya | R1/R2/R4 | Tidak ada Major OPEN |
-| P2 | Rerun seluruh 34 test case pada build baru | R1 | P1/P2 PASS; tidak ada Critical/Major OPEN |
+| P2 | Rerun seluruh 48 test case pada build baru | R1 | P1/P2 PASS; tidak ada Critical/Major OPEN |
 
 ## 9. Sumber Data dan Evidence
 
-- [Kiwi TCMS Run 31](https://localhost/run/31/) — 34 eksekusi, status, build, tester, dan komentar.
-- [Test Plan UTS PPL Sprint 5](https://localhost/plan/1/) — 34 test case dan priority.
-- [GitHub Issues #7–#38](https://github.com/SallVea/UTS-PPL/issues?q=is%3Aissue) — 32 issue OPEN dan label severity/priority.
+- [Kiwi TCMS Plan 1](https://localhost/plan/1/) — 48 eksekusi, status, build, tester, dan komentar (termasuk Run 31 konsolidasi + Run 32–47 T6/T7).
+- [Test Plan UTS PPL Sprint 5](https://localhost/plan/1/) — 48 test case dan priority.
+- [GitHub Issues #7–#40](https://github.com/SallVea/UTS-PPL/issues?q=is%3Aissue) — 34 issue OPEN dan label severity/priority.
 - [T8 Traceability](https://github.com/SallVea/UTS-PPL/blob/main/evidence-uts/t8-traceability.md) — relasi issue, test case, dan eksekusi.
 - [T8 Triage Notes](https://github.com/SallVea/UTS-PPL/blob/main/evidence-uts/triage-notes.md) — notulen triage per issue.
 - [Severity & Priority Matrix](https://github.com/SallVea/UTS-PPL/blob/main/evidence-uts/severity-priority-matrix.md) — definisi dan alasan final.
 - [Session Notes T5](https://github.com/SallVea/UTS-PPL/tree/main/evidence-uts/session-notes) — charter, Session Notes, dan debrief.
 - [Screenshots T8](https://github.com/SallVea/UTS-PPL/tree/main/evidence-uts/screenshots) — evidence visual per issue.
-- Data mentah: `laporan/data/run31-executions.json` dan `laporan/data/issues.json`.
+- Data mentah: `laporan/data/run31-executions.json`, `laporan/data/issues.json`, `laporan/data/kiwi-executions.json`, `laporan/data/kiwi-cases.json`, `laporan/data/meta.json`.
+- Cap waktu pengambilan data: **2026-10-26T05:07:03Z** (dari `meta.json`).
 
-**Catatan konsistensi:** T8 traceability kini mencakup seluruh 32 issue. Empat issue tambahan (#35–#38) ditemukan pada putaran eksekusi 22 Oktober dan sudah ditautkan ke eksekusi FAIL Kiwi melalui komentar TE-87, TE-88, dan TE-86. Seluruh 32 issue dihitung dalam metrik T9.
+**Catatan konsistensi:** T8 traceability kini mencakup seluruh 34 issue. Enam issue tambahan (#35–#40) ditemukan pada putaran eksekusi 22 Oktober dan sudah ditautkan ke eksekusi FAIL Kiwi melalui komentar TE-87, TE-88, TE-86, TE-89, dan TE-90. Seluruh 34 issue dihitung dalam metrik T9. Plan 1 (48 TC) menggantikan Run 31 (34 TC) sebagai basis data utama; Run 31 tetap terlampir di Lampiran A untuk referensi historis.
 
 ## Lampiran A — Daftar Eksekusi Run 31
+
+Lampiran ini hanya mencakup Run 31 (34 test case). Plan 1 lengkap (48 TC) ada di `kiwi-snapshot.md`.
 
 | TE | Test case | Priority | Status | Tester |
 |---:|---|---|---|---|

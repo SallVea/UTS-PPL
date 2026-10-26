@@ -50,7 +50,7 @@ README.md
 - [Notulen triage](evidence-uts/triage-notes.md) — 2–3 kalimat per issue.
 - [Matriks severity & priority](evidence-uts/severity-priority-matrix.md) — definisi dan alasan final.
 - [Traceability](evidence-uts/t8-traceability.md) — issue ↔ TC ↔ eksekusi Kiwi ↔ evidence.
-- [Evidence screenshots](evidence-uts/screenshots/) — 40 file (33 PNG BUG + 7 PDF T6), termasuk pembanding #34; #39–#40 tidak punya berkas screenshot di repo.
+- [Evidence screenshots](evidence-uts/screenshots/) — 51 file (40 PNG BUG + 11 PDF T6/T7), termasuk pembanding #34, T6/T7, dan gambar #39–#40 yang diunduh dari body issue.
 
 ## Dokumen T9
 
